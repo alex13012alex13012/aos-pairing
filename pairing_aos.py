@@ -1,5 +1,3 @@
-st.write("gspread import test")
-import gspread
 import streamlit as st
 import json
 import os
