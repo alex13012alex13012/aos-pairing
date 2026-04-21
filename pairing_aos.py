@@ -314,6 +314,19 @@ else:
         and j not in used_def_this_scen
     ]
 
+
+
+
+    def scen_level(player, s):
+        if s in player.get("good_scen", []):
+            return 3
+        elif s in player.get("ok_scen", []):
+            return 2
+        elif s in player.get("bad_scen", []):
+            return -2
+        return 0
+
+
     def def_score(j):
 
         player = data[j]
@@ -331,19 +344,20 @@ else:
             score = 0
             current_level = 0
 
-        def level(s):
-            if s in player.get("good_scen", []):
-                return 3
-            elif s in player.get("ok_scen", []):
-                return 2
-            elif s in player.get("bad_scen", []):
-                return -2
-            return 0
+
+
+        played_scenarios = {h["scenario"] for h in history}
 
         for fs in player.get("good_scen", []) + player.get("ok_scen", []):
-            if level(fs) > current_level:
-                score -= 1
-                break
+
+            # scénario futur uniquement
+            if fs not in played_scenarios:
+
+                # si futur meilleur que actuel
+                if scen_level(player, fs) > current_level:
+                    score -= 1
+                    break
+
 
         bad_matchups_count = 0
         for a in available_adv:
@@ -351,7 +365,7 @@ else:
                 bad_matchups_count += 1
 
         if bad_matchups_count >= 2:
-            score -= 1
+            score -= 2
 
         if player.get("defensif", False):
             score += 1
