@@ -8,7 +8,7 @@ st.title("AoS - Pairing - Aléa de la méta")
 # =========================
 # MODE (OBLIGATOIRE)
 # =========================
-mode = st.sidebar.radio("Mode", ["Préparation", "Tournoi"])
+mode = st.sidebar.radio("Mode", ["Préparation", "Tournoi"],index=1)
 selected_round = st.sidebar.selectbox("Ronde", ["R1", "R2", "R3", "R4", "R5"])
 
 # =========================
