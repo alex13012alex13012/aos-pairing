@@ -1,0 +1,367 @@
+{
+  "R1": {
+    "Nicolas Vercruysse (Ekyeez)": {
+      "good_scen": [
+        "S2"
+      ],
+      "ok_scen": [
+        "S1",
+        "S3"
+      ],
+      "bad_scen": [],
+      "good": [
+        "Disciples of tzeentch",
+        "Lumineth Realm-lords",
+        "Stormcast Eternals"
+      ],
+      "bad": [
+        "Fyreslayers",
+        "Flesh-eater courts",
+        "Maggotkin of nurgle"
+      ]
+    },
+    "Alexandre Pujol (Alex Pjl)": {
+      "good_scen": [],
+      "ok_scen": [
+        "S1",
+        "S3"
+      ],
+      "bad_scen": [
+        "S2"
+      ],
+      "good": [
+        "Disciples of tzeentch",
+        "Fyreslayers",
+        "Flesh-eater courts",
+        "Lumineth Realm-lords",
+        "Maggotkin of nurgle",
+        "Stormcast Eternals"
+      ],
+      "bad": []
+    },
+    "Julien Paccallet (Galhadar)": {
+      "good_scen": [
+        "S3"
+      ],
+      "ok_scen": [
+        "S1",
+        "S2"
+      ],
+      "bad_scen": [],
+      "good": [
+        "Disciples of tzeentch",
+        "Fyreslayers",
+        "Flesh-eater courts",
+        "Lumineth Realm-lords",
+        "Maggotkin of nurgle",
+        "Stormcast Eternals"
+      ],
+      "bad": []
+    },
+    "Alexandre Bochet-M\u00e9rand (Acortex)": {
+      "good_scen": [],
+      "ok_scen": [],
+      "bad_scen": [],
+      "good": [
+        "Disciples of tzeentch",
+        "Fyreslayers",
+        "Flesh-eater courts",
+        "Lumineth Realm-lords",
+        "Maggotkin of nurgle",
+        "Stormcast Eternals"
+      ],
+      "bad": []
+    },
+    "Christophe Canalis (Iscariote)": {
+      "good_scen": [],
+      "ok_scen": [],
+      "bad_scen": [],
+      "good": [],
+      "bad": []
+    },
+    "Louis Moulin (Groot)": {
+      "good_scen": [],
+      "ok_scen": [],
+      "bad_scen": [],
+      "good": [],
+      "bad": []
+    }
+  },
+  "R2": {
+    "Nicolas Vercruysse (Ekyeez)": {
+      "good_scen": [
+        "S2",
+        "S3"
+      ],
+      "ok_scen": [],
+      "bad_scen": [],
+      "good": [
+        "Ironjawz",
+        "Maggotkin of nurgle",
+        "Stormcast Eternals"
+      ],
+      "bad": [
+        "Lumineth Realm-lords"
+      ]
+    },
+    "Alexandre Pujol (Alex Pjl)": {
+      "good_scen": [],
+      "ok_scen": [
+        "S1",
+        "S3"
+      ],
+      "bad_scen": [
+        "S2"
+      ],
+      "good": [],
+      "bad": []
+    },
+    "Julien Paccallet (Galhadar)": {
+      "good_scen": [
+        "S3"
+      ],
+      "ok_scen": [
+        "S1",
+        "S2"
+      ],
+      "bad_scen": [],
+      "good": [],
+      "bad": []
+    },
+    "Alexandre Bochet-M\u00e9rand (Acortex)": {
+      "good_scen": [],
+      "ok_scen": [],
+      "bad_scen": [],
+      "good": [],
+      "bad": []
+    },
+    "Christophe Canalis (Iscariote)": {
+      "good_scen": [],
+      "ok_scen": [],
+      "bad_scen": [],
+      "good": [],
+      "bad": []
+    },
+    "Louis Moulin (Groot)": {
+      "good_scen": [],
+      "ok_scen": [],
+      "bad_scen": [],
+      "good": [],
+      "bad": []
+    }
+  },
+  "adversaires": [
+    "Disciples of tzeentch",
+    "Fyreslayers",
+    "Flesh-eater courts",
+    "Lumineth Realm-lords",
+    "Maggotkin of nurgle",
+    "Stormcast Eternals"
+  ],
+  "rounds": {
+    "R1": {
+      "adversaires": [
+        "Disciples of tzeentch",
+        "Fyreslayers",
+        "Flesh-eater courts",
+        "Lumineth Realm-lords",
+        "Maggotkin of nurgle",
+        "Stormcast Eternals"
+      ],
+      "players": {},
+      "history": [],
+      "state": {
+        "used_players": [],
+        "used_adv": []
+      }
+    },
+    "R2": {
+      "adversaires": [
+        "1",
+        "2",
+        "3"
+      ],
+      "players": {},
+      "history": [],
+      "state": {
+        "used_players": [],
+        "used_adv": []
+      }
+    },
+    "R3": {
+      "adversaires": [
+        "Ossiarch Bonereapers",
+        "Helmiths of Hashut",
+        "Lumineth Realm-lords",
+        "Ironjawz",
+        "Slaves to darkness",
+        "Cities of sigmar"
+      ],
+      "players": {
+        "Nicolas Vercruysse (Ekyeez)": {
+          "good_scen": [
+            "S2"
+          ],
+          "ok_scen": [
+            "S1",
+            "S3"
+          ],
+          "bad_scen": [],
+          "good": [],
+          "bad": []
+        },
+        "Alexandre Pujol (Alex Pjl)": {
+          "good_scen": [],
+          "ok_scen": [
+            "S1",
+            "S3"
+          ],
+          "bad_scen": [
+            "S2"
+          ],
+          "good": [],
+          "bad": []
+        },
+        "Julien Paccallet (Galhadar)": {
+          "good_scen": [],
+          "ok_scen": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "bad_scen": [],
+          "good": [],
+          "bad": []
+        },
+        "Alexandre Bochet-M\u00e9rand (Acortex)": {
+          "good_scen": [],
+          "ok_scen": [
+            "S2",
+            "S3"
+          ],
+          "bad_scen": [
+            "S1"
+          ],
+          "good": [],
+          "bad": []
+        },
+        "Christophe Canalis (Iscariote)": {
+          "good_scen": [],
+          "ok_scen": [
+            "S2",
+            "S3"
+          ],
+          "bad_scen": [
+            "S1"
+          ],
+          "good": [],
+          "bad": []
+        },
+        "Louis Moulin (Groot)": {
+          "good_scen": [
+            "S3"
+          ],
+          "ok_scen": [
+            "S1"
+          ],
+          "bad_scen": [
+            "S2"
+          ],
+          "good": [],
+          "bad": []
+        }
+      },
+      "history": [],
+      "state": {
+        "used_players": [],
+        "used_adv": []
+      }
+    },
+    "R5": {
+      "adversaires": [],
+      "players": {}
+    },
+    "R4": {
+      "adversaires": [],
+      "players": {
+        "Nicolas Vercruysse (Ekyeez)": {
+          "good_scen": [
+            "S2"
+          ],
+          "ok_scen": [
+            "S1",
+            "S3"
+          ],
+          "bad_scen": [],
+          "good": [],
+          "bad": []
+        },
+        "Alexandre Pujol (Alex Pjl)": {
+          "good_scen": [],
+          "ok_scen": [
+            "S1",
+            "S3"
+          ],
+          "bad_scen": [
+            "S2"
+          ],
+          "good": [],
+          "bad": []
+        },
+        "Julien Paccallet (Galhadar)": {
+          "good_scen": [],
+          "ok_scen": [
+            "S1",
+            "S2",
+            "S3"
+          ],
+          "bad_scen": [],
+          "good": [],
+          "bad": []
+        },
+        "Alexandre Bochet-M\u00e9rand (Acortex)": {
+          "good_scen": [],
+          "ok_scen": [
+            "S2",
+            "S3"
+          ],
+          "bad_scen": [
+            "S1"
+          ],
+          "good": [],
+          "bad": []
+        },
+        "Christophe Canalis (Iscariote)": {
+          "good_scen": [],
+          "ok_scen": [
+            "S2",
+            "S3"
+          ],
+          "bad_scen": [
+            "S1"
+          ],
+          "good": [],
+          "bad": []
+        },
+        "Louis Moulin (Groot)": {
+          "good_scen": [
+            "S3"
+          ],
+          "ok_scen": [
+            "S1"
+          ],
+          "bad_scen": [
+            "S2"
+          ],
+          "good": [],
+          "bad": []
+        }
+      },
+      "history": [],
+      "state": {
+        "used_players": [],
+        "used_adv": []
+      }
+    }
+  }
+}
