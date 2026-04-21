@@ -1,0 +1,137 @@
+{
+  "adversaires": [
+    "Disciples of tzeentch",
+    "Fyreslayers",
+    "Flesh-eater courts",
+    "Lumineth Realm-lords",
+    "Maggotkin of nurgle",
+    "Stormcast Eternals"
+  ],
+  "players": {
+    "Nicolas Vercruysse (Ekyeez)": {
+      "good_scen": [
+        "S2"
+      ],
+      "ok_scen": [
+        "S1",
+        "S3"
+      ],
+      "bad_scen": [],
+      "good": [
+        "Disciples of tzeentch",
+        "Lumineth Realm-lords",
+        "Stormcast Eternals"
+      ],
+      "bad": [
+        "Fyreslayers",
+        "Flesh-eater courts",
+        "Maggotkin of nurgle"
+      ],
+      "defensif": true
+    },
+    "Alexandre Pujol (Alex Pjl)": {
+      "good_scen": [
+        "S3",
+        "S1"
+      ],
+      "ok_scen": [
+        "S1"
+      ],
+      "bad_scen": [
+        "S2"
+      ],
+      "good": [
+        "Disciples of tzeentch",
+        "Fyreslayers",
+        "Flesh-eater courts",
+        "Lumineth Realm-lords",
+        "Stormcast Eternals"
+      ],
+      "bad": [],
+      "defensif": false
+    },
+    "Julien Paccallet (Galhadar)": {
+      "good_scen": [
+        "S3"
+      ],
+      "ok_scen": [
+        "S1",
+        "S2"
+      ],
+      "bad_scen": [],
+      "good": [
+        "Fyreslayers",
+        "Flesh-eater courts"
+      ],
+      "bad": [],
+      "defensif": false
+    },
+    "Alexandre Bochet-M\u00e9rand (Acortex)": {
+      "good_scen": [],
+      "ok_scen": [
+        "S2",
+        "S3"
+      ],
+      "bad_scen": [
+        "S1"
+      ],
+      "good": [
+        "Disciples of tzeentch",
+        "Fyreslayers",
+        "Maggotkin of nurgle",
+        "Stormcast Eternals"
+      ],
+      "bad": [],
+      "defensif": true
+    },
+    "Christophe Canalis (Iscariote)": {
+      "good_scen": [],
+      "ok_scen": [
+        "S2",
+        "S3"
+      ],
+      "bad_scen": [
+        "S1"
+      ],
+      "good": [
+        "Fyreslayers",
+        "Lumineth Realm-lords"
+      ],
+      "bad": [
+        "Disciples of tzeentch",
+        "Flesh-eater courts",
+        "Lumineth Realm-lords",
+        "Maggotkin of nurgle"
+      ],
+      "defensif": true
+    },
+    "Louis Moulin (Groot)": {
+      "good_scen": [
+        "S3"
+      ],
+      "ok_scen": [
+        "S1"
+      ],
+      "bad_scen": [
+        "S2"
+      ],
+      "good": [
+        "Fyreslayers",
+        "Lumineth Realm-lords",
+        "Maggotkin of nurgle",
+        "Stormcast Eternals"
+      ],
+      "bad": [
+        "Disciples of tzeentch"
+      ],
+      "defensif": false
+    }
+  },
+  "history": [],
+  "state": {
+    "used_players": []
+  },
+  "score_own": "",
+  "score_enemy": "",
+  "result": "\u2696\ufe0f DRAW"
+}

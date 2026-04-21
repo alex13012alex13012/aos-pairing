@@ -1,0 +1,111 @@
+{
+  "adversaires": [
+    "Kharadron Overlords",
+    "Maggotkin of nurgle",
+    "Seraphon",
+    "Idoneth Deepkin",
+    "Lumineth Realm-lords",
+    "Skaven"
+  ],
+  "players": {
+    "Nicolas Vercruysse (Ekyeez)": {
+      "good_scen": [
+        "S1"
+      ],
+      "ok_scen": [
+        "S2",
+        "S3"
+      ],
+      "bad_scen": [],
+      "good": [
+        "Seraphon",
+        "Idoneth Deepkin",
+        "Lumineth Realm-lords"
+      ],
+      "bad": [
+        "Kharadron Overlords",
+        "Maggotkin of nurgle"
+      ],
+      "defensif": true
+    },
+    "Alexandre Pujol (Alex Pjl)": {
+      "good_scen": [
+        "S3"
+      ],
+      "ok_scen": [
+        "S2"
+      ],
+      "bad_scen": [
+        "S1"
+      ],
+      "good": [
+        "Seraphon"
+      ],
+      "bad": [
+        "Kharadron Overlords",
+        "Idoneth Deepkin"
+      ],
+      "defensif": false
+    },
+    "Julien Paccallet (Galhadar)": {
+      "good_scen": [],
+      "ok_scen": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "bad_scen": [],
+      "good": [],
+      "bad": [],
+      "defensif": false
+    },
+    "Alexandre Bochet-M\u00e9rand (Acortex)": {
+      "good_scen": [],
+      "ok_scen": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "bad_scen": [],
+      "good": [],
+      "bad": [],
+      "defensif": true
+    },
+    "Christophe Canalis (Iscariote)": {
+      "good_scen": [],
+      "ok_scen": [
+        "S2",
+        "S3"
+      ],
+      "bad_scen": [
+        "S1"
+      ],
+      "good": [
+        "Seraphon",
+        "Lumineth Realm-lords"
+      ],
+      "bad": [
+        "Kharadron Overlords",
+        "Maggotkin of nurgle",
+        "Idoneth Deepkin",
+        "Skaven"
+      ],
+      "defensif": true
+    },
+    "Louis Moulin (Groot)": {
+      "good_scen": [
+        "S3"
+      ],
+      "ok_scen": [
+        "S2"
+      ],
+      "bad_scen": [
+        "S1"
+      ],
+      "good": [],
+      "bad": [],
+      "defensif": false
+    }
+  },
+  "history": []
+}
