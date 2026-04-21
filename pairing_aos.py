@@ -1,7 +1,6 @@
 import streamlit as st
 import json
 import os
-import gspread
 
 st.set_page_config(layout="wide")
 st.title("AoS - Pairing - Aléa de la méta")
@@ -48,66 +47,6 @@ def load_round(r):
 def save_round(r, data):
     with open(file_round(r), "w") as f:
         json.dump(data, f, indent=2)
-
-# =========================
-# GOOGLE SHEETS
-# =========================
-def connect_gsheet():
-
-    scope = [
-        "https://spreadsheets.google.com/feeds",
-        "https://www.googleapis.com/auth/drive"
-    ]
-
-    creds = ServiceAccountCredentials.from_json_keyfile_dict(
-        st.secrets["gcp_service_account"],
-        scope
-    )
-
-    client = gspread.authorize(creds)
-    sheet = client.open("aos_pairing_backup").worksheet("preparation")
-
-    return sheet
-
-
-
-
-
-def save_to_gsheet(round_name, data):
-    sheet = connect_gsheet()
-
-    # mapping des rondes
-    round_index = {
-        "R1": 0,
-        "R2": 1,
-        "R3": 2,
-        "R4": 3,
-        "R5": 4
-    }
-
-    start_row = 2 + round_index[round_name] * 6
-
-    rows = []
-
-    for player, d in data["players"].items():
-        rows.append([
-            str(round_name),
-            str(player),
-            ";".join(d.get("good_scen", [])),
-            ";".join(d.get("ok_scen", [])),
-            ";".join(d.get("bad_scen", [])),
-            ";".join(d.get("good", [])),
-            ";".join(d.get("bad", [])),
-            str(bool(d.get("defensif", False))),
-            ";".join(data.get("adversaires", []))
-        ])
-
-    # 👉 on écrit UNIQUEMENT la zone de la ronde
-    end_row = start_row + len(rows) - 1
-    sheet.update(f"A{start_row}:I{end_row}", rows)
-    
-
-
 
 round_data = load_round(selected_round)
 
@@ -235,8 +174,7 @@ if mode == "Préparation":
     with col1:
         if st.button("💾 Sauvegarder"):
             save_round(selected_round, round_data)
-            save_to_gsheet(selected_round, round_data)
-            st.success("Sauvegardé (local + Google Sheets)")
+            st.success("Sauvegardé")
 
     with col2:
         if st.button("🧹 Reset"):
