@@ -3,8 +3,10 @@ import json
 import os
 
 st.set_page_config(layout="wide")
-st.title("AoS - Pairing - Aléa de la méta")
-
+st.markdown(
+    "<h1 style='text-align: center;'>AoS - Pairing - Aléa de la méta</h1>",
+    unsafe_allow_html=True
+)
 # =========================
 # MODE (OBLIGATOIRE)
 # =========================
