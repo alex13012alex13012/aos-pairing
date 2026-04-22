@@ -89,8 +89,10 @@ def score(player, scen, adv):
 # =========================
 # ADV INPUT
 # =========================
-st.header(f"Ronde {selected_round}")
-
+st.markdown(
+    f"<h2 style='text-align: center;'>RONDE {selected_round}</h2>",
+    unsafe_allow_html=True
+)
 if mode == "Préparation":
     adv_text = st.text_area(
         "Armées adverses",
@@ -195,20 +197,22 @@ else:
     data = round_data["players"]
     history = round_data["history"]
 
-    if st.button("🔄 Reset la ronde"):
+    # 👉 BOUTON RESET CENTRÉ UNIQUEMENT
+    col1, col2, col3 = st.columns([2,1,2])
+    with col2:
+        reset_clicked = st.button("🔄 Reset ronde")
+
+    if reset_clicked:
         round_data["history"] = []
         save_round(selected_round, round_data)
         st.rerun()
 
+    # 👉 reste du code NORMAL (pas centré)
     used_adv = set()
     for h in history:
         used_adv.add(h["atk_adv"])
         used_adv.add(h["def_adv"])
 
-    available_adv = [a for a in round_data["adversaires"] if a not in used_adv]
-
-    st.subheader("⚔️ Armées adverses restantes ⚔️")
-    st.write(", ".join(available_adv) if available_adv else "Aucune armée restante")
 
     if len(history) >= 3:
 
@@ -235,13 +239,6 @@ else:
 
 
         st.stop()
-
-
-
-
-
-
-
 
 
     scen_index = len(history) + 1
@@ -272,7 +269,10 @@ else:
             if is_active:
                 st.markdown("</div>", unsafe_allow_html=True)
 
+    available_adv = [a for a in round_data["adversaires"] if a not in used_adv]
 
+    st.subheader("⚔️ Armées adverses restantes ⚔️")
+    st.write(", ".join(available_adv) if available_adv else "Aucune armée restante")
       
     
     used_players_global = set()
@@ -355,25 +355,20 @@ else:
 
     positive_def = [(s, j) for s, j in def_rank if s > 0]
 
-    st.subheader("🛡️ Défenseurs conseillés")
+    st.subheader("🛡️ Défenseurs")
 
     for s, j in positive_def:
         st.write(f"{j} ({s})")
 
-    if len(positive_def) >= 2:
-        top2_def = [j for _, j in positive_def[:2]]
-        st.success(f"👉 Recommandation : {top2_def[0]} & {top2_def[1]}")
-    elif len(positive_def) == 1:
-        st.success(f"👉 Recommandation : {positive_def[0][1]}")
-    else:
-        st.warning("Aucun défenseur recommandé")
+    
 
     defenseur = st.selectbox("Ton défenseur", available_players)
 
     adv_def = st.selectbox("Défenseur adverse", available_adv)
 
+    st.subheader("️⚔️ Attaquants adverses (2)")
     adv_pool = st.multiselect(
-        "Attaquants adverses (2)",
+        "",
         available_adv,
         max_selections=2
     )
@@ -438,8 +433,7 @@ else:
         reverse=True
     )
 
-    st.subheader("⚔️ Tes 2 meilleurs attaquants")
-
+    st.subheader(f"⚔️ Meilleurs attaquants contre {adv_def}")
     for s, j in atk_rank[:3]:
         st.write(f"{j} ({s})")
 
@@ -449,32 +443,35 @@ else:
 
     attaquant = st.selectbox("Ton attaquant", atk_candidates)
 
-    if st.button("Valider scénario") and adv_choice:
+    col1, col2, col3 = st.columns([1,2,1])
 
-        round_data["history"].append({
-            "scenario": scen,
-            "atk": attaquant,
-            "def": defenseur,
-            "atk_adv": adv_choice,
-            "def_adv": adv_def
-        })
+    with col2:
+        if st.button("✔️ Valider scénario", use_container_width=True) and adv_choice:
+            round_data["history"].append({
+                "scenario": scen,
+                "atk": attaquant,
+                "def": defenseur,
+                "atk_adv": adv_choice,
+                "def_adv": adv_def
+            })
 
-        save_round(selected_round, round_data)
-        st.rerun()
+            save_round(selected_round, round_data)
+            st.rerun()
+
+
+
+
+
 
     st.subheader("Résumé")
 
     if history:
         for h in history:
-            atk = score(data[h["atk"]], h["scenario"], h["atk_adv"])
-            deff = score(data[h["def"]], h["scenario"], h["def_adv"])
-            total = atk + deff
 
             st.write(
                 f"{h['scenario']} | "
                 f"{h['def']} vs {h['atk_adv']} | "
                 f"{h['atk']} vs {h['def_adv']} | "
-                f"Score : {total}"
             )
     else:
         st.write("Aucun scénario joué pour le moment")
