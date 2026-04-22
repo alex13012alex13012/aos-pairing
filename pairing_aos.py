@@ -205,7 +205,7 @@ else:
 
     available_adv = [a for a in round_data["adversaires"] if a not in used_adv]
 
-    st.subheader("🧠 Armées adverses restantes")
+    st.subheader("⚔️ Armées adverses restantes ⚔️")
     st.write(", ".join(available_adv) if available_adv else "Aucune armée restante")
 
     if len(history) >= 3:
@@ -231,29 +231,6 @@ else:
 
         st.success(f"🏆 Score total de la ronde (6 joueurs) : {total_score_round}")
 
-        st.subheader("📊 Résultat final de la ronde")
-
-        round_data["score_own"] = st.text_input(
-            "Score mon équipe /480",
-            value=round_data.get("score_own", "")
-        )
-
-        round_data["score_enemy"] = st.text_input(
-            "Score équipe adverse /480",
-            value=round_data.get("score_enemy", "")
-        )
-
-        result = st.radio(
-            "Résultat",
-            ["🏆 WIN", "⚖️ DRAW", "💀 LOSS"],
-            horizontal=True
-        )
-
-        round_data["result"] = result
-
-        if st.button("💾 Sauvegarder résultat de ronde"):
-            save_round(selected_round, round_data)
-            st.success("Résultat enregistré")
 
         st.stop()
 
@@ -295,9 +272,6 @@ else:
 
 
       
-
-
-    # ===== TOUT LE RESTE IDENTIQUE =====
     
     used_players_global = set()
     for h in history:
