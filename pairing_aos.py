@@ -461,8 +461,6 @@ else:
 
 
 
-
-
     st.subheader("Résumé")
 
     if history:
