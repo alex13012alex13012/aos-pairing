@@ -2,19 +2,21 @@ import streamlit as st
 import json
 import os
 
+
+#NOM DE L'EQUIPE A MODIFIER AU BESOIN
 st.set_page_config(layout="wide")
 st.markdown(
     "<h1 style='text-align: center;'>AoS - Pairing - Aléa de la méta</h1>",
     unsafe_allow_html=True
 )
 # =========================
-# MODE (OBLIGATOIRE)
+# MODE
 # =========================
 mode = st.sidebar.radio("Mode", ["Préparation", "Tournoi"],index=1)
 selected_round = st.sidebar.selectbox("Ronde", ["R1", "R2", "R3", "R4", "R5"])
 
 # =========================
-# CONFIG
+# CONFIG DES JOUEURS A MODIFIER AU BESOIN : ["NOM1","NOM2",...,"NOM6"]
 # =========================
 joueurs = [
     "Nicolas Vercruysse (Ekyeez)",
@@ -124,7 +126,6 @@ if mode == "Préparation":
 
             st.success(f"Image sauvegardée pour {scen}")
 
-    # ===== TON CODE EXISTANT =====
     for j in joueurs:
         d = get_player(j)
 
@@ -341,7 +342,7 @@ else:
                 bad_matchups_count += 1
 
         if bad_matchups_count >= 2:
-            score -= 2
+            score -= 1.5
 
         if player.get("defensif", False):
             score += 1
@@ -457,6 +458,8 @@ else:
 
             save_round(selected_round, round_data)
             st.rerun()
+
+
 
 
 
