@@ -1,0 +1,129 @@
+{
+  "adversaires": [
+    "Cities of sigmar",
+    "Gloomspite Gitz",
+    "Flesh-eater courts",
+    "Lumineth Realm-lords",
+    "Ironjawz",
+    "Soulblight Gravelords"
+  ],
+  "players": {
+    "Nicolas Vercruysse (Ekyeez)": {
+      "good_scen": [
+        "S1"
+      ],
+      "ok_scen": [
+        "S2",
+        "S3"
+      ],
+      "bad_scen": [],
+      "good": [
+        "Cities of sigmar",
+        "Flesh-eater courts",
+        "Lumineth Realm-lords",
+        "Ironjawz",
+        "Soulblight Gravelords"
+      ],
+      "bad": [
+        "Gloomspite Gitz"
+      ],
+      "defensif": true
+    },
+    "Alexandre Pujol (Alex Pjl)": {
+      "good_scen": [
+        "S3"
+      ],
+      "ok_scen": [
+        "S2"
+      ],
+      "bad_scen": [
+        "S1"
+      ],
+      "good": [
+        "Flesh-eater courts",
+        "Ironjawz"
+      ],
+      "bad": [
+        "Cities of sigmar",
+        "Lumineth Realm-lords"
+      ],
+      "defensif": false
+    },
+    "Julien Paccallet (Galhadar)": {
+      "good_scen": [],
+      "ok_scen": [
+        "S1",
+        "S3"
+      ],
+      "bad_scen": [
+        "S2"
+      ],
+      "good": [
+        "Ironjawz"
+      ],
+      "bad": [],
+      "defensif": false
+    },
+    "Alexandre Bochet-M\u00e9rand (Acortex)": {
+      "good_scen": [],
+      "ok_scen": [
+        "S1",
+        "S3"
+      ],
+      "bad_scen": [
+        "S2"
+      ],
+      "good": [
+        "Ironjawz",
+        "Soulblight Gravelords",
+        "Cities of sigmar",
+        "Flesh-eater courts"
+      ],
+      "bad": [],
+      "defensif": true
+    },
+    "Christophe Canalis (Iscariote)": {
+      "good_scen": [],
+      "ok_scen": [
+        "S2",
+        "S3"
+      ],
+      "bad_scen": [
+        "S1"
+      ],
+      "good": [
+        "Flesh-eater courts",
+        "Lumineth Realm-lords"
+      ],
+      "bad": [
+        "Ironjawz",
+        "Soulblight Gravelords",
+        "Cities of sigmar"
+      ],
+      "defensif": true
+    },
+    "Louis Moulin (Groot)": {
+      "good_scen": [
+        "S2"
+      ],
+      "ok_scen": [
+        "S3"
+      ],
+      "bad_scen": [
+        "S1"
+      ],
+      "good": [
+        "Gloomspite Gitz",
+        "Flesh-eater courts",
+        "Lumineth Realm-lords",
+        "Ironjawz",
+        "Soulblight Gravelords"
+      ],
+      "bad": [
+        "Cities of sigmar"
+      ],
+      "defensif": false
+    }
+  },
+  "history": []
+}
